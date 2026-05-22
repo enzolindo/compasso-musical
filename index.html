@@ -1,112 +1,237 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compasso Musical - Loja de Instrumentos Musicais</title>
     <style>
-        .nomeLogo {
-            .ListaNavegacao;
-            display: flex;
-            
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>compasso musical</title>
-    <style> 
-        
-        .cabecalhoPrincipal{
-            background-color: #ffffff;
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    .nomeLogo{
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .cabecalhoPrincipal {
+        background-color: #ffffff;
+        padding: 1.5rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nomeLogo {
         font-size: 1.8rem;
         font-weight: bold;
-        color: blueviolet;
-    }
+        color: #d32f2f;
+      }
+
+      .ListaNavegacao {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .linkNav {
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      .linkNav:hover {
+        color: #d32f2f;
+      }
+
+      .botaoprincipal {
+        display: inline-block;
+        background-color: green;
+        color: #ffffff;
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+      .botaoPrincipal:hover {
+        background-color: greenyellow;
+        color: #ffffff;
+      }
+      .container {padding: 4rem 5%;}
+      .tituloSecao {text-align: center;font-size: 2.5rem;margin-bottom: 2rem;}
+      .gradeProdutos{display: flex;gap: 4rem;justify-content: center;flex-wrap: wrap;}
+      .cartaoProduto{background-color: #ffffff;border-radius: 8px;padding: 1.5rem;width: 400px;box-shadow: 0.4px 6px rgba(0, 0, 0, 0.5);text-align: center;}
     </style>
-</head>
-<body>
-    <!--cabecario do site-->
-    ,<header id="header">
-    <div id="logo">
-        <h1 class="nomeLogo" class="cabecalhoPrincipal">compasso musical</h1>
-    </div>
-        <nav id="nav">
-            <ul class="navegacao">
-                <li><a href="hero" class="linknav"></a>inicio</li>
-                <li><a href="sobre" class="linknav"></a>sobre</li>
-                <li><a href="produtos" class="linknav"></a>produtos</li>
-                <li><a href="depoimentos" class="linknav"></a>depoimentos</li>
-                <li><a href="contato" class="linknav"></a>contato</li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <!-- Cabeçalho do Site -->
+    <header id="header" class="cabecalhoPrincipal">
+      <div id="Logo">
+        <h1 class="nomeLogo">Compasso Musical</h1>
+      </div>
+      <nav id="nav">
+        <ul class="ListaNavegacao">
+          <li>
+            <a href="#hero" class="linkNav">Início</a>
+          </li>
+          <li>
+            <a href="#sobre" class="linkNav">Sobre</a>
+          </li>
+          <li>
+            <a href="#produtos" class="linkNav">Produtos</a>
+          </li>
+          <li>
+            <a href="#depoimentos" class="linkNav">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#contato" class="linkNav">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <!--conteudo principal-->
+
+    <!-- Conteúdo Principal -->
     <main>
-        <section id="hero">
-            <h2>O som da sua vida começa aqui</h2>
-            <p>
-                encontre as melhores marcas de bateria,guitarras,saxfones e tecladoscom condições impediveis
-            </p>
-            <img src="https://plus.unsplash.com/premium_photo-1681335986095-5a9585e77246?" alt="mulher sentada tocando guitarra" width="200" height="300">
-        </section>
-        <!--seção sobre-->
-        <section id="sobre">
-        <section id="sobre">
-            <h2>Sobre o Compasso Musical</h2>
-            <p>
-                Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais
-            </p>
-            <ul>
-                <li>todos os intrumentos são revisados por nossa equipe tecnica</li>
-                <li>garantia estendida de fábrica</li>
-                <li>suporte e atendimento feito por musicas reais</li>
-            </ul>
-        </section>
-        <!--seção produtos-->
-        <section id="produtos">
-            <h2>Catálogo de Produtos</h2>
-            <article>
-                <h3>Guitarra Elétrica Fender Stratocaster</h3>
-                <img src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?" alt="Guitarra Elétrica Fender Stratocaster azul" width="200">
+      <!--Seção hero-->
+      <section
+        id="hero"
+        class="secaohero"
+        style="
+          background-color: #eceff1;
+          text-align: center;
+          padding: 5rem 2ram;
+          border-bottom: 4px solid #d32f2f;
+        "
+      >
+        <h2 style="font-size: 3ram; color: #1a1a1a">
+          O Som da Sua Vida Começa Aqui!
+        </h2>
+        <p
+          style="
+            text-align: center 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+          "
+        >
+          Encontre as melhores marcas de bateria, guitarras, saxofones e
+          teclados com condições imperdiveis
+        </p>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1681335986095-5a9585e77246?"
+          alt="Banda musical que está tocando 
+    com os instrumentos da Compasso Musical"
+          width="600"
+          style="
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          "
+        />
+        <br />
+        <a
+          href="#"
+          class="botaoprincipal"
+          style="font-size: 1.2em; padding: 1rem 2rem"
+          >ver nossas ofertas</a
+        >
+      </section>
+
+      <!--Seção sobre-->
+        <section id="sobre" class="container">
+            <h2 class="tituloSecao">sobre Compasso Musical</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <p>
-                    <strong>marca:</strong> Fender
+                    Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora tanto para quem está aprendendo os primeiros acordes quanto para músicos profissionais
                 </p>
-                <p>guitarra clássica de alta performance,ideal para rock e blues</p>
-                <p>preco: R$2.0000,00</p>
-                <a href="#">adicionar ao carrinho</a>
+                <ul style="text-align: left; display: inline-block; margin-top: 1rem;">
+                    <li style="margin-bottom: 0.5rem;">todos os intrumentos são revisados por nossa equipe tecnica</li>
+                    <li style="margin-bottom: 0.5rem;">garantia estendida de fábrica</li>
+                    <li style="margin-bottom: 0.5rem;">suporte e atendimento feito por musicas reais</li>
+                </ul>
+
+            </div>
+        </section>
+        
+             <!--seção protudos-->
+           <section id="produtos"  class="container" style="background-color: #eeeeee;">
+        <h2 class="tituloSecao">Catálogo de instrumentos.</h2>
+        <div class="gradeProdutos">
+            <article class="cartaoProduto">
+              <h3 class="nomeProduto">Guitarra Elétrica Stratocaster.</h3>
+              <img
+                src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?
+                    "alt="Guitarra Elétrica Stratocaster" width="200"
+              />
+              <p><strong>Marca:</strong> Fender</p>
+              <p>
+                Guitarra clássica de alta performancel, ideal para rock e blues.
+              </p>
+              <p><em>Preço: R$ 3.500,00</em></p>
+              <a href="#">Adicionar ao Carrinho</a>
             </article>
-        </section>
-        <!--seção depoimentos-->
-        <section id="depoimentos">
-            <h2>oque nossos clientes dizem</h2>
-            <blockquote>
-                <p>
-                    "comprei uma guitarra eletrica fender stratocaster e fiquei impressionado com a qualidade do som e o atendimento da equipe do compasso musical"
-                </p>
-                <cite>enzo geovane</cite>
-            </blockquote> <br>
-            <blockquote>
-                <p>
-                    "comprei a guitarra mas estava com um pequeno defeito,mas o suporte do compasso musical foi super atencioso e resolveu meu problema rapidamente"
-                </p>
-                <cite>adriano fisica 2026</cite>
-        </section>
-        <!--seção contato-->
-        <section id="contato">
-            <h2>fale conosco</h2>
-            <p>
-                tem duvidas sobre instrumento?mande uma mensagem ou venha nos visitar
-            </p>
-            <address>
-                <p>
-                    <strong>loja fisica:</strong> centro historico cuiaba - mt
-                </p>
-            </address>
-            <form action="#">
-                <label for="nome">Nome completo</label> <br>
+    
+            <article>
+              <h3>Bateria Acústica Profissonal roxa e preta.</h3>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1768160171200-fc42104e0310?"
+                alt="Bateria Acústica Profissonal"
+                width="400" height="300"
+              />
+              <p><strong>Marca:</strong> Pearl</p>
+              <p>
+                Kit com bumbo, caixa, tons, pratos, ferragens e pedal. Som
+                incorpado.
+              </p>
+              <p><em>Preço: R$ 5, 200.00/em></p>
+              <a href="#">Adicionar ao Carrinho</a>
+            </article>
+        </div>
+      </section>
+            <!---Seção depoimentos-->
+            <section id="depoimentos">
+                <h2>O que nossos Clientes Dizes</h2>
+                <blockquote>
+                    <p>"A bateria chegou super rápida Aqui em Cuiabá e perfeitamente embalada, O som é incivel</p>
+                    <footer> <cite>Mambo, Baterista</cite></footer>
+                </blockquote>
+                <br>
+                <blockquote>
+                    <p>"Comprei minha primeira quitarra na Compasso Músical. O atendimento me ajudou e escolher o modelo certo</p>
+                    <footer> <cite>Manhattan Cafe, Baterista</cite></footer>
+                </blockquote>
+            </section>
+
+            <!--Seção contato-->
+            <section id="contado">
+                <h2>Fale Conosco</h2>
+                <p>Tem dúvidas sobre algum intrumentos? Mande uma mensagem ou venha nos visitar</p>
+                <address>
+                    <p>
+                        <strong>Loja Fisica: </strong>Centro Histórico, Cuiabá - MT
+                    </p>
+                </address>
+                <form action="#">
+                    <label for="nome">Nome completo</label> <br>
                     <input type="text" name="nome" id="nome" placeholder="Digita seu nome"> <br><br>
                     <label for="email">e-mail</label>
                     <br>
@@ -118,82 +243,93 @@
                     <select name="departamento" id="">departamento</select>
                     <option value="vendas">vendas</option>
                     <option value="Surporte">Surporte Técnicos</option>
-                    <option value="financeiro">financeiro</option>
-                    <option value="sugestão">sugestão</option>
+                    <option value="finamceiro">finamceiro</option>
+                    <option value="sugestão">Surgestões</option>
             </section>
             <br><br>
-            <label for="mensagem">mensagem:</label>
+            <label for="mensagem">mensagem</label>
             <br>
-            <textarea name="mensagem" id="mensagem" placeholder="digite sua mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem" rows="10"></textarea> 
             <br><br>
-            <button type="submit">enviar</button>
-            </form>
-        </section>
+            <button type="submit"> enviar mensagem</button>     
+        </form>
+    </section> 
     </main>
-    <!--rodape do site-->
-<footer id="footer">
-    <div>
-        <h2>compasso musical</h2>
+
+    <!--Rodapé do site-->
+    
+    <footer id="footer">
+        <div>
+            <h2>Compasso Musical</h2>
+            <p>
+                Desde 2026 conctando pessoas através da música.
+            </p>
+        </div>
+
+        <nav>
+            <h3>Mapa do sait</h3>
+            <ul>
+                <li>
+                    
+                <a href="#">início</a>
+            </li>
+             <li>
+                <a href="#">Sobre</a>   
+            </li>
+             <li>
+                <a href="#">Prudutos</a>
+            </li>
+             <li>
+                <a href="#">Depoimentos</a>
+            </li>
+             <li>
+                <a href="#">Comtato</a>
+            </li>
+          </ul>  
+        </nav>
+        <nav>
+            <h3>Informações</h3>
+           <ul>
+            <li>
+                <a href="#">Termos de Uso</a>
+                <li>
+                    <a href="#">Políticas de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#">Trocas de Devolução</a>
+                </li>
+           </ul>
+        </nav>
+
+        <div>
+            <h3>Siga-nos</h3>
+            <div>
+                <a href="a">
+                    <img src="instagram.png" alt="imagem do instagram" width="30">
+                </a>
+                  <a href="a">
+                    <img src="communication.png" alt="imagem do Facebook" width="30">
+                </a>
+                  <a href="a">
+                    <img src="logo.png" alt="imagem do whatsapp width="30">
+                </a>
+            </div>
+        </div>
+        <h1>News letter</h1>
         <p>
-            desde 2026 conectando pessoas atravez da musica
-        </p>
-    </div>
-    <nav>
-        <h3>Mapa de site</h3>
-        <ul>
-                <li><a href="#"></a>inicio</li>
-                <li><a href="#"></a>sobre</li>
-                <li><a href="#"></a>produtos</li>
-                <li><a href="#"></a>depoimentos</li>
-                <li><a href="#"></a>contato</li>
-        </ul>
-    </nav>
-
-    <nav>
-        <h3>informações</h3>
-        <ul>
-            <li>
-                <a href="#">termos de uso</a>
-            </li>
-            <li>
-                <a href="#">politica de privacidade</a>
-            </li>
-            <li>
-                <a href="#">trocas e devolução</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div>
-        <h3>Siga-nos</h3>
-            <a href="a">
-                    <img src="tik-tok.png" alt="imagem do tik-tok"
-                    width="30"
-                    height="30">
-            </a>
-                <img src="whatsapp.png" alt="imagem do whatsapp"
-                width="30"
-                height="30">
-    </div>
-
-    <div>
-        <h3>newsletter</h3>
-        <p>
-            receba promoções exclusivas no seu email
+            Receba promoções exclusivas no seu e-mail
         </p>
         <form>
-            <input type="email"
-            name="email"
-            id="email"
-            placeholder="digite seu email">
-            <button type="submit">assinar</button>
+           <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+           <button type="submit">Assinar</button>
         </form>
     </div>
+
     <div>
         <p>
-            copyright &copy; 2026 compasso musical - todos os diretos reservados.site desenvolvido por enzo geovane
+            Copyright &copy; 2026 Compasso Musical -  Todos os direitos reservados. Site desnvolvido por Enzo Geovame xavier santos
         </p>
     </div>
-</footer>
+    </footer>
 </body>
 </html>
