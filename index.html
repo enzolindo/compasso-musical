@@ -168,19 +168,9 @@
           src="https://plus.unsplash.com/premium_photo-1681335986095-5a9585e77246?"
           alt="Banda musical que está tocando 
     com os instrumentos da Compasso Musical"
-          width="600"
-          style="
-            border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-          "
-        />
-        <br />
-        <a
-          href="#"
-          class="botaoprincipal"
-          style="font-size: 1.2em; padding: 1rem 2rem"
-          >ver nossas ofertas</a
-        >
+           width="600"
+          style="border-radius: 12px;box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);"/> <br><br>
+        <br> <a href="#"class="botaoPrincipal"style="font-size: 1.2em; padding: 1rem 2rem">ver nossas ofertas</a>
       </section>
 
       <!--Seção sobre-->
@@ -251,41 +241,51 @@
                 </blockquote>
             </section>
 
-            <!--Seção contato-->
-            <section id="contado">
-                <h2>Fale Conosco</h2>
-                <p>Tem dúvidas sobre algum intrumentos? Mande uma mensagem ou venha nos visitar</p>
-                <address>
-                    <p>
-                        <strong>Loja Fisica: </strong>Centro Histórico, Cuiabá - MT
-                    </p>
-                </address>
-                <form action="#">
-                    <label for="nome">Nome completo</label> <br>
-                    <input type="text" name="nome" id="nome" placeholder="Digita seu nome"> <br><br>
-                    <label for="email">e-mail</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Digital seu e-mail"
-                    required>
-                    <br><br>
-                    <label for="departamento">departamento</label>
-                    <br>
-                    <select name="departamento" id="">departamento</select>
-                    <option value="vendas">vendas</option>
-                    <option value="Surporte">Surporte Técnicos</option>
-                    <option value="finamceiro">finamceiro</option>
-                    <option value="sugestão">Surgestões</option>
-            </section>
-            <br><br>
-            <label for="mensagem">mensagem</label>
-            <br>
-            <textarea name="mensagem" id="mensagem" rows="10"></textarea> 
-            <br><br>
-            <button type="submit"> enviar mensagem</button>     
-        </form>
-    </section> 
-    </main>
-
+             <!--Seção contato-->
+           <section id="contato" class="container" style="background-color: #eceff1;">
+        <h2 class="tituloSecao">Fale Conosco</h2>
+        <div style="max-width: 600;margin: 0 auto;background: #ffffff;padding: 2rem;border-radius: 8px;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+          <p style="text-align: center;margin-bottom: 2rem;">
+            Tem dúvidas sobre algum instrumento? Entre em contato com a nossa
+            equipe ou venha nos visitar.
+          </p>
+          <address style="text-align: center;margin-bottom: 2rem;font-style: normal;">
+            <p><strong>Loja Física: </strong>Jardim Itália, Cuiabá - MT</p>
+          </address>
+          <form action="#">
+            <label for="nome" style="font-weight: bold;">Nome Completo:</label>
+            <br />
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+              required
+              style="width: 100%;padding: 0.8rem;margin: 0.5rem 0 1.5rem 0;border:1px solid #cccccc;border-radius: 4px;"
+            />
+            <label for="email" style="font-weight: bold;">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              required
+              style="width: 100%;padding: 0.8rem;margin: 0.5rem 0 1.5rem 0;border:1px solid #cccccc;border-radius: 4px;"
+            />
+            <label for="departamento" style="font-weight: bold;">Departamento</label>
+            <select name="departamento" id="departamento" style="width: 100%;padding: 0.8rem;margin: 0.5rem 0 1.5rem 0;border:1px solid #cccccc;border-radius: 4px;">
+              <option value="vendas">vendas</option>
+              <option value="suporte">Suporte Técnico</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="susgestão">Sugestões</option>
+            </select>
+            <label for="mensagem" style="font-weight: bold;">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="10" style="width: 100%;padding: 0.8rem;margin: 0.5rem 0 1.5rem 0;border:1px solid #cccccc;border-radius: 4px;"></textarea>
+            <button type="submit" class="botaoPrincipal" style="width: 100%; border: nome;cursor: pointer;">Enviar Mensagem</button> 
+          </form>
+        </div>
+      </section>
+      </main>
     <!--Rodapé do site-->
     
     <footer id="footer">
