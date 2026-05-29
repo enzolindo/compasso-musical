@@ -65,53 +65,61 @@
         }
 
         .botaoPrincipal {
-        display: inline-block;
-        background-color: #d32f2f;
-        color:aliceblue;
-        padding:0.8rem 1.5rem;
-        border-radius: 4px;
-        font-weight: 1rem;
+            display: inline-block;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
         }
-        
-        .botaoPrincipal:hover {
-            background-color: #9c1313;
+        .botaoPrincipal:hover{
+            background-color: #102065;
             color: #ffffff;
         }
-        .container {
+        .container{
             padding: 4rem 5%;
         }
-
-        .tituloSecao {
+        .tituloSecao{
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
-
-        .gradeProdutos {
+        .gradeProdutos{
             display: flex;
             gap: 2rem;
             justify-content: center;
-            flex-wrap: wrap
+            flex-wrap: wrap;
         }
-
-        .cartaoProduto {
-            background-color: #ffffff;
+        .cartaoProdutos{
+            background-color: #fff;
             border-radius: 8px;
             padding: 1.5rem;
-            max-width: 500px;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.5);
             text-align: center;
-            transition: tranform 0.3s ease;
+            transition: transform 0.3 ease;
+        }
+        .cartaoProdutos:hover {
+            transform: translateY(-5px)
+        }
+        .rodapePrincipal{
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .rodapePrincipal h2,
+        .rodapePrincipal h3{
+            color: #ffffff;
         }
 
-        .cartaoProduto:hover {
-            transform: translateY(-5px);
-        }
-            
     </style>
 </head>
 <body>
-
     <!-- Cabeçalho do Site -->
     <header id="header" class="cabecalhoPrincipal">
       <div id="Logo">
@@ -286,80 +294,81 @@
         </div>
       </section>
       </main>
-    <!--Rodapé do site-->
-    
-    <footer id="footer">
-        <div>
-            <h2>Compasso Musical</h2>
-            <p>
-                Desde 2026 conctando pessoas através da música.
-            </p>
-        </div>
+  <!-- Rodapé do Site-->
+    <footer id="footer" class="rodapePrincipal">
+      <div style="flex: 1; min-width: 250px;">
+        <h2 class="nomeLogo">Compasso Muical</h2>
+        <p>Desde 2024 entregando o melhor som para os músicos de todo o Brasil.</p>
+      </div>
+      <nav style="flex: 1; min-width: 150px;">
+        <h3 style="border-bottom: #d32f2f 2px solid;padding-bottom: 0.5rem display: block;">mapa do site</h3>
+          <ul style="margin-top: 1rem;line-height: 2;">
+          <li>
+            <a href="#" class="linkNav">inicio</a>
+          </li>
+          <a href="#" class="linkNav">Sobre</a>
+          <li>
+            <a href="#" class="linkNav">Produtos</a>
+          </li>
+          <li>
+            <a href="#" class="linkNav">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#" class="linkNav">Contato</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav>
-            <h3>Mapa do sait</h3>
-            <ul>
-                <li>
-                    
-                <a href="#">início</a>
-            </li>
-             <li>
-                <a href="#">Sobre</a>   
-            </li>
-             <li>
-                <a href="#">Prudutos</a>
-            </li>
-             <li>
-                <a href="#">Depoimentos</a>
-            </li>
-             <li>
-                <a href="#">Comtato</a>
-            </li>
-          </ul>  
-        </nav>
-        <nav>
-            <h3>Informações</h3>
-           <ul>
-            <li>
-                <a href="#">Termos de Uso</a>
-                <li>
-                    <a href="#">Políticas de Privacidade</a>
-                </li>
-                <li>
-                    <a href="#">Trocas de Devolução</a>
-                </li>
-           </ul>
-        </nav>
+      <nav style="flex: 1; min-width: 150px;">
+        <h3 style="border-bottom: #d32f2f 2px solid;padding-bottom: 0.5rem display block;">Informações</h3>
+        <ul style="margin-top: 1rem;line-height: 2;">
+          <li>
+            <a href="#" class="linkNav">termos de uso</a>
+          </li>
+          <li>
+            <a href="#" class="linkNav">politica de privacidade</a>
+          </li>
+          <li>
+            <a href="#" class="linkNav">trocas e devoluções</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div>
-            <h3>Siga-nos</h3>
-            <div>
-                <a href="a">
-                    <img src="instagram.png" alt="imagem do instagram" width="30">
-                </a>
-                  <a href="a">
-                    <img src="communication.png" alt="imagem do Facebook" width="30">
-                </a>
-                  <a href="a">
-                    <img src="logo.png" alt="imagem do whatsapp width="30">
-                </a>
-            </div>
+    <div style="flex: 1; min-width: 150px;">
+        <h3 style="border-bottom: #d32f2f 2px solid;padding-bottom: 0.5rem display block">Siga-nos</h3>
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="#">
+                <img src="instagram.png" alt="Imagem do Instagram" width="60">
+            </a>
+            <a href="#">
+                <img src="communication.png" alt="Imagem do facebook" width="60">
+            </a>
+            <a href="#">
+                <img src="logo.png" alt="Imagem do Whatsapp" width="60">
+            </a>
         </div>
-        <h1>News letter</h1>
-        <p>
-            Receba promoções exclusivas no seu e-mail
-        </p>
-        <form>
-           <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
-           <button type="submit">Assinar</button>
+    </div>
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="border-bottom: #d32f2f 2px solid;padding-bottom: 0.5rem display block">Newsletter</h3>
+        <p style="margin-top: 1rem;">Receba promoções exclusivas no seu e-mail:</p>
+        <form style="display:flex;margin-top: 1rem;">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            styler="0.8rem;border:4px 0 0 4px;outiline: none;widht: 70%;"
+          />
+          <button type="submit" class="botaoPrincipal" style="margin-top: 0;border-radius: 0 4px 4px 0;border: none;cursor: pointer;">Assinar</button>
         </form>
-    </div>
+      </div>
 
-    <div>
+            <div style="width: 100%; text-align: center; margin-top: 2rem;border-top: 1px solid #333333;padding-top: 1rem;">
         <p>
-            Copyright &copy; 2026 Compasso Musical -  Todos os direitos reservados. Site desnvolvido por Enzo Geovame xavier santos
+          Copyrigth &copy;2026 compasso musical - todos os direitos reservados.
+          site desenvolvido por Enzo Geovane xavier santos  
         </p>
-    </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
